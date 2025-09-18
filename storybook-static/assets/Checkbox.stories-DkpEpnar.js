@@ -1,0 +1,5 @@
+import{j as i}from"./jsx-runtime-Cf8x2fCZ.js";import{r as p}from"./index-QQMyt9Ur.js";import{c as d}from"./clsx-B-dksMZM.js";import"./index-yBjzXJbu.js";import"./_commonjsHelpers-CqkleIqs.js";const s=p.forwardRef(({className:a,...c},n)=>i.jsx("input",{ref:n,type:"checkbox",className:d("h-4 w-4 rounded border-slate-300 text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary",a),...c}));s.displayName="Checkbox";s.__docgenInfo={description:"",methods:[],displayName:"Checkbox",props:{className:{required:!1,tsType:{name:"string"},description:""}},composes:["InputHTMLAttributes"]};const b={title:"Base/Checkbox",component:s,tags:["autodocs"]},e={args:{defaultChecked:!0}};var o,r,t;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {
+    defaultChecked: true
+  }
+}`,...(t=(r=e.parameters)==null?void 0:r.docs)==null?void 0:t.source}}};const h=["Default"];export{e as Default,h as __namedExportsOrder,b as default};

@@ -1,0 +1,7 @@
+import{j as t}from"./jsx-runtime-Cf8x2fCZ.js";import{c as d}from"./clsx-B-dksMZM.js";import{B as m}from"./Button-B98vyqz6.js";import"./index-yBjzXJbu.js";import"./index-QQMyt9Ur.js";import"./_commonjsHelpers-CqkleIqs.js";function n({title:i="Sin datos",description:s,action:c,className:l}){return t.jsxs("div",{className:d("flex flex-col items-center justify-center rounded-lg border bg-white p-8 text-center",l),children:[t.jsx("div",{className:"mb-2 text-lg font-semibold text-slate-900",children:i}),s&&t.jsx("div",{className:"mb-4 text-sm text-slate-600",children:s}),c]})}n.__docgenInfo={description:"",methods:[],displayName:"EmptyState",props:{title:{required:!1,tsType:{name:"ReactNode"},description:"",defaultValue:{value:'"Sin datos"',computed:!1}},description:{required:!1,tsType:{name:"ReactNode"},description:""},action:{required:!1,tsType:{name:"ReactNode"},description:""},className:{required:!1,tsType:{name:"string"},description:""}}};const N={title:"Extras/EmptyState",component:n,tags:["autodocs"]},e={args:{title:"Sin resultados",description:"Intenta cambiar los filtros o crea un nuevo elemento.",action:t.jsx(m,{children:"Crear"})}};var a,r,o;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    title: "Sin resultados",
+    description: "Intenta cambiar los filtros o crea un nuevo elemento.",
+    action: <Button>Crear</Button>
+  }
+}`,...(o=(r=e.parameters)==null?void 0:r.docs)==null?void 0:o.source}}};const S=["Default"];export{e as Default,S as __namedExportsOrder,N as default};

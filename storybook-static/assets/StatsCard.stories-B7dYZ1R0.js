@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-Cf8x2fCZ.js";import{c as l}from"./clsx-B-dksMZM.js";import"./index-yBjzXJbu.js";function d({label:i,value:n,icon:t,className:c}){return e.jsxs("div",{className:l("flex items-center justify-between rounded-lg border bg-white p-4 shadow-sm",c),children:[e.jsxs("div",{children:[e.jsx("div",{className:"text-sm text-slate-600",children:i}),e.jsx("div",{className:"text-2xl font-semibold text-slate-900",children:n})]}),t&&e.jsx("div",{className:"text-secondary",children:t})]})}d.__docgenInfo={description:"",methods:[],displayName:"StatsCard",props:{label:{required:!0,tsType:{name:"ReactNode"},description:""},value:{required:!0,tsType:{name:"ReactNode"},description:""},icon:{required:!1,tsType:{name:"ReactNode"},description:""},className:{required:!1,tsType:{name:"string"},description:""}}};const x={title:"Datos/StatsCard",component:d,tags:["autodocs"]},s={args:{label:"Viajes",value:128}};var a,r,o;s.parameters={...s.parameters,docs:{...(a=s.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    label: "Viajes",
+    value: 128
+  }
+}`,...(o=(r=s.parameters)==null?void 0:r.docs)==null?void 0:o.source}}};const f=["Default"];export{s as Default,f as __namedExportsOrder,x as default};

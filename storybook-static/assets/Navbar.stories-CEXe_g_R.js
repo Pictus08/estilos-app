@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-Cf8x2fCZ.js";import{c as d}from"./clsx-B-dksMZM.js";import{B as m}from"./Button-B98vyqz6.js";import"./index-yBjzXJbu.js";import"./index-QQMyt9Ur.js";import"./_commonjsHelpers-CqkleIqs.js";function i({left:o,right:n,className:c}){return e.jsxs("header",{className:d("flex items-center justify-between border-b bg-white px-4 py-3 shadow-sm",c),children:[e.jsx("div",{className:"flex items-center gap-2",children:o}),e.jsx("div",{className:"flex items-center gap-2",children:n})]})}i.__docgenInfo={description:"",methods:[],displayName:"Navbar",props:{left:{required:!1,tsType:{name:"ReactNode"},description:""},right:{required:!1,tsType:{name:"ReactNode"},description:""},className:{required:!1,tsType:{name:"string"},description:""}}};const h={title:"Layout/Navbar",component:i,tags:["autodocs"]},s={args:{left:e.jsx("div",{className:"font-semibold",children:"Mi App"}),right:e.jsx(m,{variant:"secondary",children:"Salir"})}};var r,t,a;s.parameters={...s.parameters,docs:{...(r=s.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: {
+    left: <div className="font-semibold">Mi App</div>,
+    right: <Button variant="secondary">Salir</Button>
+  }
+}`,...(a=(t=s.parameters)==null?void 0:t.docs)==null?void 0:a.source}}};const N=["Default"];export{s as Default,N as __namedExportsOrder,h as default};

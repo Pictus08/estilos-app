@@ -1,0 +1,5 @@
+import{j as a}from"./jsx-runtime-Cf8x2fCZ.js";import{c}from"./clsx-B-dksMZM.js";import"./index-yBjzXJbu.js";function o({children:d,className:n}){return a.jsx("div",{className:c("rounded-lg border bg-white p-4",n),children:d})}o.__docgenInfo={description:"",methods:[],displayName:"Chart",props:{children:{required:!1,tsType:{name:"ReactNode"},description:""},className:{required:!1,tsType:{name:"string"},description:""}}};const p={title:"Datos/Chart",component:o,tags:["autodocs"]},e={args:{children:a.jsx("div",{className:"h-40 w-full rounded-md bg-slate-100 text-center leading-[10rem]",children:"Aquí tu chart"})}};var r,t,s;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: {
+    children: <div className="h-40 w-full rounded-md bg-slate-100 text-center leading-[10rem]">Aquí tu chart</div>
+  }
+}`,...(s=(t=e.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const u=["Placeholder"];export{e as Placeholder,u as __namedExportsOrder,p as default};

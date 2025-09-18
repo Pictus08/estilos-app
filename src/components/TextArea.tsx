@@ -1,5 +1,6 @@
 import { forwardRef, type TextareaHTMLAttributes } from "react";
 import clsx from "clsx";
+import { controlBase } from "../lib/styles";
 
 export interface TextAreaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {
@@ -12,10 +13,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
       <textarea
         ref={ref}
         rows={rows}
-        className={clsx(
-          "block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-secondary",
-          className
-        )}
+        className={clsx(controlBase, className)}
         {...props}
       />
     );
@@ -23,4 +21,3 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
 );
 
 TextArea.displayName = "TextArea";
-

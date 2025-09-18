@@ -1,0 +1,16 @@
+@reference "tailwindcss";
+@import "./tokens.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  html, body, #root { height: 100%; }
+  /* Keep plain CSS to avoid Tailwind v4 @apply unknown utility warnings in build */
+  body { background-color: #f8fafc; color: #0f172a; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  h1,h2,h3,h4,h5,h6 { color: #0f172a; }
+  code { border-radius: 0.25rem; background: #f1f5f9; padding: 0.125rem 0.25rem; }
+}

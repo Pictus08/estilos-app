@@ -1,5 +1,6 @@
 import { forwardRef, type SelectHTMLAttributes, type ReactNode } from "react";
 import clsx from "clsx";
+import { controlBase } from "../lib/styles";
 
 export interface Option {
   label: ReactNode;
@@ -17,10 +18,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
       <select
         ref={ref}
         multiple={multiple}
-        className={clsx(
-          "block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary",
-          className
-        )}
+        className={clsx(controlBase, className)}
         {...props}
       >
         {options
@@ -36,4 +34,3 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
 );
 
 Select.displayName = "Select";
-

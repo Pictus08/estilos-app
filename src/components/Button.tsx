@@ -1,5 +1,6 @@
 import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from "react";
 import clsx from "clsx";
+import { cva, type VariantProps } from "class-variance-authority";
 
 export type ButtonVariant =
   | "primary"
@@ -9,33 +10,44 @@ export type ButtonVariant =
   | "success"
   | "icon";
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: ButtonVariant;
+const buttonStyles = cva(
+  "inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md active:scale-[0.99]",
+  {
+    variants: {
+      variant: {
+        primary: "bg-[var(--btn-primary-bg)] text-[var(--btn-primary-fg)] hover:brightness-110",
+        secondary: "bg-[var(--btn-secondary-bg)] text-[var(--btn-secondary-fg)] hover:brightness-110",
+        outline: "border border-[var(--btn-outline-border)] bg-transparent text-[var(--btn-primary-fg)] hover:bg-white/5",
+        danger: "bg-[var(--btn-danger-bg)] text-[var(--btn-danger-fg)] hover:brightness-110",
+        success: "bg-emerald-600 text-white hover:bg-emerald-600/90",
+        icon: "h-9 w-9 p-0 bg-transparent hover:bg-slate-100 text-slate-700 rounded-full",
+      },
+      size: {
+        sm: "h-8 px-3 text-xs",
+        md: "h-10 px-4 text-sm",
+        lg: "h-11 px-5 text-base",
+      },
+    },
+    defaultVariants: {
+      variant: "primary",
+      size: "md",
+    },
+  }
+);
+
+export interface ButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonStyles> {
   className?: string;
   children?: ReactNode;
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ variant = "primary", className, children, disabled, ...props }, ref) => {
-    const base =
-      "inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
-
-    const variants: Record<ButtonVariant, string> = {
-      primary: "bg-primary text-white hover:bg-primary/90 focus:ring-primary",
-      secondary:
-        "bg-secondary text-white hover:bg-secondary/90 focus:ring-secondary",
-      outline:
-        "border border-slate-300 text-slate-700 hover:bg-slate-50 focus:ring-slate-300",
-      danger: "bg-danger text-white hover:bg-danger/90 focus:ring-danger",
-      success:
-        "bg-emerald-600 text-white hover:bg-emerald-600/90 focus:ring-emerald-600",
-      icon: "p-2 h-9 w-9 bg-transparent hover:bg-slate-100 text-slate-700",
-    };
-
+  ({ variant, size, className, children, disabled, ...props }, ref) => {
     return (
       <button
         ref={ref}
-        className={clsx(base, variants[variant], className)}
+        className={clsx(buttonStyles({ variant, size }), className)}
         disabled={disabled}
         {...props}
       >

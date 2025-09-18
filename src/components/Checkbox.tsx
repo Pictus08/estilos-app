@@ -12,7 +12,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
         ref={ref}
         type="checkbox"
         className={clsx(
-          "h-4 w-4 rounded border-slate-300 text-secondary focus:ring-secondary",
+          "h-4 w-4 rounded border-slate-300 text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary",
           className
         )}
         {...props}
@@ -22,4 +22,3 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
 );
 
 Checkbox.displayName = "Checkbox";
-

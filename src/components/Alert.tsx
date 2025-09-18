@@ -17,9 +17,8 @@ export function Alert({ variant = "info", children, className }: AlertProps) {
     error: "bg-danger/10 text-danger border-danger/30",
   };
   return (
-    <div className={clsx("rounded-md border px-4 py-3 text-sm", styles[variant], className)}>
+    <div className={clsx("rounded-lg border px-4 py-3 text-sm shadow-sm", styles[variant], className)}>
       {children}
     </div>
   );
 }
-

@@ -25,14 +25,13 @@ export function TBody({ children }: { children?: ReactNode }) {
 }
 
 export function TR({ children }: { children?: ReactNode }) {
-  return <tr className="hover:bg-slate-50">{children}</tr>;
+  return <tr className="odd:bg-white even:bg-slate-50/50 hover:bg-slate-50">{children}</tr>;
 }
 
 export function TH({ children }: { children?: ReactNode }) {
-  return <th className="px-4 py-2 font-semibold">{children}</th>;
+  return <th className="px-4 py-2 font-semibold text-slate-700">{children}</th>;
 }
 
 export function TD({ children }: { children?: ReactNode }) {
   return <td className="px-4 py-2">{children}</td>;
 }
-

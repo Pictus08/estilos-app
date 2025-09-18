@@ -1,0 +1,5 @@
+import{j as p}from"./jsx-runtime-Cf8x2fCZ.js";import{r as m}from"./index-QQMyt9Ur.js";import{c}from"./clsx-B-dksMZM.js";import"./index-yBjzXJbu.js";import"./_commonjsHelpers-CqkleIqs.js";const s=m.forwardRef(({className:r,...i},l)=>p.jsx("input",{ref:l,type:"file",className:c("block w-full text-sm text-slate-700 file:mr-4 file:rounded-md file:border-0 file:bg-secondary file:px-4 file:py-2 file:text-white hover:file:bg-secondary/90",r),...i}));s.displayName="FileUpload";s.__docgenInfo={description:"",methods:[],displayName:"FileUpload",props:{className:{required:!1,tsType:{name:"string"},description:""}},composes:["Omit"]};const g={title:"Base/FileUpload",component:s,tags:["autodocs"]},e={args:{accept:"image/*"}};var a,o,t;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    accept: "image/*"
+  }
+}`,...(t=(o=e.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const y=["Default"];export{e as Default,y as __namedExportsOrder,g as default};

@@ -14,7 +14,7 @@ export function Pagination({ page, totalPages, onChange, className }: Pagination
     <div className={clsx("flex items-center gap-2", className)}>
       <button
         className={clsx(
-          "rounded-md border px-3 py-1 text-sm",
+          "rounded-lg border px-3 py-1.5 text-sm shadow-sm hover:shadow-md transition",
           canPrev ? "hover:bg-slate-50" : "opacity-50 cursor-not-allowed"
         )}
         onClick={() => canPrev && onChange?.(page - 1)}
@@ -26,7 +26,7 @@ export function Pagination({ page, totalPages, onChange, className }: Pagination
       </span>
       <button
         className={clsx(
-          "rounded-md border px-3 py-1 text-sm",
+          "rounded-lg border px-3 py-1.5 text-sm shadow-sm hover:shadow-md transition",
           canNext ? "hover:bg-slate-50" : "opacity-50 cursor-not-allowed"
         )}
         onClick={() => canNext && onChange?.(page + 1)}
@@ -36,4 +36,3 @@ export function Pagination({ page, totalPages, onChange, className }: Pagination
     </div>
   );
 }
-
