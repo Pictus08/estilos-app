@@ -34,7 +34,7 @@
 }
 
 /* Dark theme (via data attribute or class) */
-[data-theme="dark"], .theme-dark {
+[data-theme="dark"], .theme-dark, .dark {
   --color-primary: #334155; /* slate-700 */
   --color-primary-foreground: #e2e8f0; /* slate-200 */
   --color-secondary: #0284c7; /* sky-600 */
