@@ -11,7 +11,7 @@ export interface CardProps {
 export function Card({ title, children, className }: CardProps) {
   return (
     <div className={clsx(cardBase, className)}>
-      {title && <h3 className="mb-3 text-base font-semibold text-slate-900">{title}</h3>}
+      {title && <h3 className="mb-3 text-base font-semibold">{title}</h3>}
       <div>{children}</div>
     </div>
   );

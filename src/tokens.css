@@ -7,6 +7,18 @@
   --color-danger: #ef4444; /* red-500 */
   --color-danger-foreground: #ffffff;
 
+  /* Surfaces (panels/cards) */
+  --panel-bg: #ffffff;
+  --panel-fg: #0f172a; /* slate-900 */
+  --panel-border: #e2e8f0; /* slate-200 */
+
+  /* Form controls */
+  --input-bg: #ffffff;
+  --input-fg: #0f172a; /* slate-900 */
+  --input-border: #cbd5e1; /* slate-300 */
+  --placeholder-fg: #94a3b8; /* slate-400 */
+  --ring-color: var(--color-secondary);
+
   /* Button tokens */
   --btn-primary-bg: var(--color-primary);
   --btn-primary-fg: var(--color-primary-foreground);
@@ -41,6 +53,18 @@
   --color-secondary-foreground: #e0f2fe; /* sky-100 */
   --color-danger: #b91c1c; /* red-700 */
   --color-danger-foreground: #fee2e2; /* red-100 */
+
+  /* Surfaces (panels/cards) */
+  --panel-bg: rgba(15, 23, 42, 0.6); /* slate-900/60 */
+  --panel-fg: #e2e8f0; /* slate-200 */
+  --panel-border: #334155; /* slate-700 */
+
+  /* Form controls */
+  --input-bg: rgba(15, 23, 42, 0.6);
+  --input-fg: #e2e8f0;
+  --input-border: #475569; /* slate-600 */
+  --placeholder-fg: #94a3b8; /* slate-400 */
+  --ring-color: var(--color-secondary);
 
   --btn-primary-bg: var(--color-primary);
   --btn-primary-fg: var(--color-primary-foreground);

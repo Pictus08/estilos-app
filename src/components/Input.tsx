@@ -12,7 +12,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       <input
         ref={ref}
         type={type}
-        className={clsx(controlBase, "[&[aria-invalid='true']]:border-danger", className)}
+        className={clsx(
+          controlBase,
+          "[&[aria-invalid='true']]:border-danger focus-visible:ring-[var(--ring-color)]",
+          className,
+        )}
         {...props}
       />
     );
